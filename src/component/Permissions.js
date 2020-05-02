@@ -25,11 +25,11 @@ AskForPermission=async()=>{
       }
     );
     if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      console.log("You can use the camera");
+      console.log("You can use the Location");
 	  this.GetLocation()
 		  
   } else {
-      console.log("Camera permission denied");
+      console.log("Location permission denied");
 	  
     }
   }catch(err){console.warn(err)}
